@@ -20,11 +20,11 @@ noble.on('discover', function(peripheral) {
       console.log(peripheral.uuid + ' ' + peripheral.advertisement.localName + ' ' + proximity);
       if (proximity <= proximityThreshold && state === "outside"){
           console.log("inside threshold");
-          //exec("/home/pi/[SCRIPT_TO_SPEAK]");
+          //exec("/home/pi/[SCRIPT_OR_BINARY_TO_EXECUTE]");
           state="inside";
       }else if (proximity >= proximityThreshold && state === "inside"){
           console.log("outside threshold");
-          //exec("/home/pi/[SCRIPT_TO_SPEAK]");
+          //exec("/home/pi/[SCRIPT_OR_BINARY_TO_EXECUTE]");
           state="outside";
       }
     }
