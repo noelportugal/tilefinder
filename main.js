@@ -4,7 +4,7 @@ var sys = require('util')
 var exec = require('child_process').exec;
 function puts(error, stdout, stderr) { sys.puts(stdout) }
 
-var rrsiThreshold = 65;
+var proximityThreshold = 65;
 var state = "outside";
 
 noble.on('stateChange', function(state) {
@@ -18,11 +18,11 @@ noble.on('discover', function(peripheral) {
     if (peripheral.advertisement.localName === "Tile"){
       var proximity = Math.abs(peripheral.rssi);
       console.log(peripheral.uuid + ' ' + peripheral.advertisement.localName + ' ' + proximity);
-      if (proximity <= rrsiThreshold && state === "outside"){
+      if (proximity <= proximityThreshold && state === "outside"){
           console.log("inside threshold");
           //exec("/home/pi/[SCRIPT_TO_SPEAK]");
           state="inside";
-      }else if (proximity >= rrsiThreshold && state === "inside"){
+      }else if (proximity >= proximityThreshold && state === "inside"){
           console.log("outside threshold");
           //exec("/home/pi/[SCRIPT_TO_SPEAK]");
           state="outside";
