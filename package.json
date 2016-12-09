@@ -1,0 +1,15 @@
+{
+  "name": "tilefinder",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "noble": "^1.7.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
