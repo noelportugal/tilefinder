@@ -4,8 +4,9 @@ A simple bluetooth [tile](https://www.thetileapp.com/) scanner.
 
 #### Installation
 
-tileFinder requires [Node.js](https://nodejs.org/) to run. Make sure you have the latest version by using apt-get
+tileFinder requires [Node.js](https://nodejs.org/) to run. Make sure you have the latest version by using the latest nodejs using apt-get
 ```sh
+curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 sudo apt-get install nodejs
 ```
 
