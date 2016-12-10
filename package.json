@@ -1,15 +1,24 @@
 {
   "name": "tilefinder",
   "version": "1.0.0",
+  "description": "A simple bluetooth [tile](https://www.thetileapp.com/) scanner base on [Noble](https://github.com/sandeepmistry/noble).",
   "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
+    "crc": "^3.4.3",
     "noble": "^1.7.0"
   },
   "devDependencies": {},
-  "description": ""
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noelportugal/tilefinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noelportugal/tilefinder/issues"
+  },
+  "homepage": "https://github.com/noelportugal/tilefinder#readme"
 }
