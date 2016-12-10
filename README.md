@@ -14,7 +14,7 @@ tileFinder requires [Node.js](https://nodejs.org/) to run. Make sure you have th
 $ curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 $ sudo apt-get install nodejs
 ```
-
+#### Installation
 ```sh
 $ git clone https://github.com/noelportugal/tilefinder
 $ cd tilefinder
