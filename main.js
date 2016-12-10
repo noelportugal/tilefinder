@@ -30,10 +30,12 @@ noble.on('discover', function(peripheral) {
             var message = 'Congrats! You have your ' + currentTiles + '. You are good to go.';
             console.log(message);
             //exec('/home/pi/[SCRIPT_OR_BINARY_TO_EXECUTE]');
+            exec('/usr/bin/flite -voice slt -t "'  + message + '"');
           }else{
             var message = 'You only have your ' + currentTiles + ', are you forgetting something?';
             console.log(message);
             //exec('/home/pi/[SCRIPT_OR_BINARY_TO_EXECUTE]');
+            exec('/usr/bin/flite -voice slt -t "'  + message + '"');
           }
         }
     }else if (proximity >= proximityThreshold){
