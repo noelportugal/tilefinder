@@ -4,7 +4,6 @@
   "description": "A simple bluetooth [tile](https://www.thetileapp.com/) scanner base on [Noble](https://github.com/sandeepmistry/noble).",
   "main": "main.js",
   "dependencies": {
-    "crc": "^3.4.3",
     "noble": "^1.7.0"
   },
   "devDependencies": {},

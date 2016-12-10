@@ -27,7 +27,7 @@ Adjust the proximityThreshold in main.js
 var proximityThreshold = 65;
 ```
 #### Extend
-You can add more actions like speaking (using flite), turn on an LED or play an MP3 by executing a script or running a program using a child_process. Uncomment these lines and add your executable.
+You can add more actions like speaking (using flite), turn on an LED or play an MP3 by executing a script or running a program using a child_process. Uncomment this line and add your executable.
 ```javascript
-exec("/home/pi/[SCRIPT_OR_BINARY_TO_EXECUTE]");
+exec('/home/pi/[SCRIPT_OR_BINARY_TO_EXECUTE]');
 ```
