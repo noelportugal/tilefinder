@@ -1,13 +1,18 @@
 # tileFinder
 
-A simple bluetooth [tile](https://www.thetileapp.com/) scanner.
+A simple bluetooth [tile](https://www.thetileapp.com/) scanner base on [Noble](https://github.com/sandeepmistry/noble).
 
-#### Installation
+#### Requirements
+If you are using an Raspberry Pi 2, make sure you have a BLE dongle like this. For Raspberry Pi 3 BLE is onboard, so no need to add a dongle.
 
-tileFinder requires [Node.js](https://nodejs.org/) to run. Make sure you have the latest version by using the latest nodejs using apt-get
+You can also run this from a macOS (haven't test in Windows).
+
+#### Raspberry PI Installation
+
+tileFinder requires [Node.js](https://nodejs.org/) to run. Make sure you have the latest version by using the latest nodejs. The following will update a Raspberry Pi nodejs to the latest version:
 ```sh
-curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
-sudo apt-get install nodejs
+$ curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+$ sudo apt-get install nodejs
 ```
 
 ```sh
