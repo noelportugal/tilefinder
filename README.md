@@ -7,7 +7,7 @@ If you are using an Raspberry Pi 2, make sure you have a BLE dongle. For Raspber
 
 You can also run this from a macOS (haven't test in Windows).
 
-#### Raspberry PI Installation
+#### Raspberry PI NodeJS
 
 tileFinder requires [Node.js](https://nodejs.org/) to run. Make sure you have the latest version by using the latest nodejs. The following will update a Raspberry Pi nodejs to the latest version:
 ```sh
