@@ -29,11 +29,13 @@ noble.on('discover', function(peripheral) {
           var message;
           if(insideTiles.length === tiles.length){
             message = 'Congrats! You have your ' + currentTiles + '. You are good to go.';
+            console.log(message)
+            //exec('/home/pi/[SCRIPT_OR_BINARY_TO_EXECUTE]');
           }else{
             message = 'You only have your ' + currentTiles + ', are you forgetting something?';
+            console.log(message)
+            //exec('/home/pi/[SCRIPT_OR_BINARY_TO_EXECUTE]');
           }
-          console.log(message)
-          //exec('/home/pi/[SCRIPT_OR_BINARY_TO_EXECUTE]');
         }
     }else if (proximity >= proximityThreshold){
         state='outside';
