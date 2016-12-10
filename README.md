@@ -3,7 +3,7 @@
 A simple bluetooth [tile](https://www.thetileapp.com/) scanner base on [Noble](https://github.com/sandeepmistry/noble).
 
 #### Requirements
-If you are using an Raspberry Pi 2, make sure you have a BLE dongle like this. For Raspberry Pi 3 BLE is onboard, so no need to add a dongle.
+If you are using an Raspberry Pi 2, make sure you have a BLE dongle. For Raspberry Pi 3 BLE is onboard, so no need to add a dongle.
 
 You can also run this from a macOS (haven't test in Windows).
 
