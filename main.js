@@ -23,22 +23,20 @@ noble.on('discover', function(peripheral) {
     var name = tiles[tileIndex].name;
     var proximity = Math.abs(peripheral.rssi);
     if (proximity <= proximityThreshold){
-        if (insideTiles.indexOf(name) === -1){
+        if (insideTiles.indexOf(name) < 0 ){
           insideTiles.push(name);
           var currentTiles = insideTiles.toString();
-          var message;
           if(insideTiles.length === tiles.length){
-            message = 'Congrats! You have your ' + currentTiles + '. You are good to go.';
-            console.log(message)
+            var message = 'Congrats! You have your ' + currentTiles + '. You are good to go.';
+            console.log(message);
             //exec('/home/pi/[SCRIPT_OR_BINARY_TO_EXECUTE]');
           }else{
-            message = 'You only have your ' + currentTiles + ', are you forgetting something?';
-            console.log(message)
+            var message = 'You only have your ' + currentTiles + ', are you forgetting something?';
+            console.log(message);
             //exec('/home/pi/[SCRIPT_OR_BINARY_TO_EXECUTE]');
           }
         }
     }else if (proximity >= proximityThreshold){
-        state='outside';
         if (insideTiles.indexOf(name) > -1){
           insideTiles.splice(insideTiles.indexOf(name), 1);
         }
