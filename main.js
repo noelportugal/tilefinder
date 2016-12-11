@@ -7,6 +7,7 @@ var tile2 = {name: 'Notebook', address: 'DB:E5:7B:05:65:E4'};
 var tile3 = {name: 'Lunchbox', address: 'ed:f9:74:a1:49:0a'};
 var tiles = [tile1, tile2, tile3];
 var insideTiles = [];
+var allIn = false;
 
 var proximityThreshold = 65;
 
@@ -26,7 +27,8 @@ noble.on('discover', function(peripheral) {
         if (insideTiles.indexOf(name) < 0 ){
           insideTiles.push(name);
           var currentTiles = insideTiles.toString();
-          if(insideTiles.length === tiles.length){
+          if(insideTiles.length === tiles.length && allIn == false){
+            allIn = true;
             var message = 'Congrats! You have your ' + currentTiles + '. You are good to go.';
             console.log(message);
             //exec('/home/pi/[SCRIPT_OR_BINARY_TO_EXECUTE]');
@@ -40,6 +42,7 @@ noble.on('discover', function(peripheral) {
         }
     }else if (proximity >= proximityThreshold){
         if (insideTiles.indexOf(name) > -1){
+          allIn = false;
           insideTiles.splice(insideTiles.indexOf(name), 1);
         }
     }
